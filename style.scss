@@ -11,18 +11,23 @@ body {
 }
 
 h1 {
-    size: 36px;
+    size: 30px;
     font-size: 72px;
     color: rgb(233, 233, 233);
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
+
+h2 {
+    padding: 10px;
+}
+
 .search {
     height: 40px;
-    font-size: 20px;
-    background-color: rgb(233, 233, 233, .7);
+    font-size: 14px;
     border-radius: 20px;
     width: 100%;
+    background-color: rgba(233, 233, 233, .70);
 }
 
 input:hover {
@@ -35,13 +40,15 @@ input:hover {
     align-items: flex-start;
     flex-direction: column;
     position: relative;
-    height: 330px;
+    height: 300px;
     padding: 20px 40px;
+    margin-top: 20px;
     background-image: url('https://cdn.pixabay.com/photo/2020/06/15/10/04/champagne-5301169_960_720.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 0;
+    border-radius: 20px;
 }
 
 .shadow {
@@ -52,6 +59,7 @@ input:hover {
     top: 0;
     left: 0;
     z-index: -1;
+    border-radius: 20px;
 }
 
 .wraper {
@@ -59,9 +67,26 @@ input:hover {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 4px grey;
+    border-radius: 20px;
+    bottom: 20px;
 }
 
-li {
-    padding-left: 20px;
-    padding: 3px;
+.drink-list {
+    padding: 0px 20px;
+
+    ul {
+        padding-bottom: 10px;
+        list-style: none;
+
+        li {
+            padding: 8px 20px;
+            border-bottom: 1px solid whitesmoke;
+            cursor: pointer;
+
+            :last-child {
+                border-bottom: 0;
+            }
+        }
+
+    }
 }
