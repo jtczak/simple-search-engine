@@ -1,86 +1,105 @@
 body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  background-color: #e9e9e9;
-  font-family: 'Montserrat Alternates', sans-serif;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150px;
-}
-
-h1 {
-  size: 30px;
-  font-size: 72px;
-  color: #e9e9e9;
-  text-shadow: 2px 2px 4px black;
-}
-
-h2 {
-  padding: 10px;
-}
-
-.search {
-  height: 40px;
-  font-size: 14px;
-  border-radius: 20px;
-  width: 100%;
-  background-color: rgba(233, 233, 233, 0.7);
-}
-
-input:hover {
-  box-shadow: 2px 2px 4px black;
-}
-
-.header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
   flex-direction: column;
-  position: relative;
-  height: 280px;
-  padding: 20px 40px;
-  margin-top: 20px;
-  background-image: url("https://cdn.pixabay.com/photo/2020/06/15/10/04/champagne-5301169_960_720.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  border-radius: 20px;
-}
-
-.shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 20px;
+  color: white;
+  background-image: linear-gradient(30deg, black, #2929d1, purple, orange);
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .wraper {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 2px 2px 4px grey;
-  border-radius: 20px;
-  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 100vh;
 }
 
-.drink-list {
-  padding: 0px 20px;
+.info {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.drink-list ul {
-  padding-bottom: 10px;
-  list-style: none;
+.info h1 {
+  font-size: 2.5rem;
+  color: #e9e9e9;
+  text-shadow: 2px 2px 4px black;
+  font-family: 'Dancing Script', cursive;
 }
 
-.drink-list ul li {
-  padding: 8px 20px;
-  border-bottom: 1px solid whitesmoke;
+.info p {
+  font-size: 1.3rem;
+}
+
+.ball-img {
+  position: relative;
+  height: 90vh;
+}
+
+.ball-img img {
+  position: absolute;
+  top: 30px;
+  left: 340px;
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+.question-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-area h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.question-area input {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-image: linear-gradient(45deg, black, #2929d1, purple, black);
+  color: white;
+  border: solid white 1px;
+  width: 50%;
+}
+
+.question-area .answer span {
+  font-weight: bold;
+}
+
+.question-area .error {
+  color: #ff0008;
+  font-weight: bold;
+}
+
+.shake-animation {
+  animation: shake 1s 1;
+}
+
+@keyframes shake {
+  0% {
+    left: 320px;
+  }
+  20% {
+    left: 360px;
+  }
+  40% {
+    left: 320px;
+  }
+  60% {
+    left: 360px;
+  }
+  80% {
+    left: 320px;
+  }
+  100% {
+    left: 360px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
